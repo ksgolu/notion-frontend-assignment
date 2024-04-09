@@ -52,3 +52,7 @@ Make sure you have a node v18 + installed on your machine.
 Run unit tests for all components using the below commands in separate terminals.
 
 Run all tests using the following commands: `npm test`.
+
+# Build
+
+To use in production environment. Create build folder using `ng build --prod` which generates static files inside dist folder. Serve these files & Deploy.
