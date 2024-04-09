@@ -45,13 +45,13 @@ Make sure you have a node v18 + installed on your machine.
 
 - clone the project. Navigate to the project directory using `cd` command.
 - Install node modules by running `npm install`
-- Start the server by running `npm serve`. The app will be accessible at http://localhost:8001/.
+- Start the server by running `ng serve`. The app will be accessible at http://localhost:8001/.
 
 # Unit Test
 
 Run unit tests for all components using the below commands in separate terminals.
 
-Run all tests using the following commands: `npm test`.
+Run all tests using the following commands: `ng test`.
 
 # Build
 
