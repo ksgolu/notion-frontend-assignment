@@ -1,0 +1,23 @@
+<div class="custom-select" [class.active]="customSelectActive">
+  <label *ngIf="label !== 'null'" for="">{{ label }}</label>
+  <button
+    class="select-button"
+    (click)="toggleCustomSelect()"
+    [attr.aria-expanded]="customSelectActive ? 'true' : 'false'"
+  >
+    <span class="selected-value">{{
+      selectedValue ? selectedText : placeholder
+    }}</span>
+    <span class="arrow"></span>
+  </button>
+  <ul class="select-dropdown">
+    <li
+      *ngFor="let option of list"
+      (click)="selectOption(option.text, option.value)"
+    >
+      {{ option.value }}
+      <input type="radio" name="{{ name }}" value="{{ option.text }}" />
+      <!-- <div class="selected-value">{{ option.text }}</div> -->
+    </li>
+  </ul>
+</div>
