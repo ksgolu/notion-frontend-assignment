@@ -1,0 +1,149 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  // font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.button {
+  border-radius: 24px;
+  padding: 15.5px 27px 15.9px 26px;
+  background-color: #fff;
+  color: var(--notion-primary-color);
+  font-size: var(--btn-text-md);
+  box-shadow: 4px 4px 0 var(--notion-primary-color);
+  font-weight: 900;
+}
+
+.button.border {
+  border: 1px solid var(--notion-primary-color);
+}
+.button.lg {
+  width: 100%;
+}
+
+.text-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .small-title {
+    font-size: var(--font-samll);
+    font-weight: 600;
+    line-height: var(--line-height-small);
+  }
+  h4 {
+    font-size: var(--font-large);
+    font-weight: 700;
+    line-height: var(--line-height-large);
+  }
+  p {
+    font-size: var(--font-medium);
+    font-weight: 400;
+    line-height: var(--line-height-medium);
+  }
+}
+
+.img-card {
+}
+
+.card-md {
+  width: 804px;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  height: 21px;
+  color: #000000;
+
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.underline {
+  text-decoration: underline;
+}
+.h-line {
+  height: 1px;
+  width: 100%;
+  margin: 8px 0;
+}
+.color-dark-orchid {
+  background-color: var(--color-dark-orchid);
+}
+
+.color-light-gray {
+  background-color: var(--color-light-gray);
+}
+
+/* Styles applied when the viewport width is less than or equal to 600 pixels */
+@media screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  .button {
+    border-radius: 12px;
+    border: 1px;
+    padding: 10px 24px 10px 24px;
+    font-weight: 900;
+    line-height: 28px;
+    font-size: var(--btn-text-md);
+  }
+
+  .card-sm {
+    width: auto;
+  }
+
+  .text-card {
+    gap: 24px;
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 768 pixels */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium-sized screens */
+}
+
+/* Styles applied when the viewport width is less than or equal to 1024 pixels */
+@media screen and (max-width: 1024px) {
+  /* CSS rules for larger screens */
+}

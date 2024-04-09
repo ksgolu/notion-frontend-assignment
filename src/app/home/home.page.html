@@ -1,0 +1,49 @@
+<ion-content>
+  <app-menu-bar></app-menu-bar>
+  <main class="main">
+    <section class="header">
+      <article class="header_column">
+        <div class="header_column_content">
+          <h4>Discover the magic of our surprise box</h4>
+          <p>
+            Unleash your child's curiosity with our educational subscription box
+            filled with fun and learning.
+          </p>
+        </div>
+
+        <div>
+          <button class="button" routerLink="/subscription">
+            Subscribe Now
+          </button>
+        </div>
+      </article>
+
+      <article>
+        <img src="/assets/images/hero-iamge.png" alt="hero image" />
+      </article>
+    </section>
+    <section class="container-layout">
+      <article class="container-layout_card">
+        <div class="text-card card-md card-sm">
+          <div>Discover</div>
+          <h4>How It Works: Subscribe and Receive Your Surprise Box</h4>
+          <p>
+            Subscribe to our surprise subscription box and give your child the
+            gift of learning. Each month, we curate a box filled with
+            educational materials tailored to your child's age and interests.
+          </p>
+        </div>
+      </article>
+      <article class="container-layout-image-card">
+        <div *ngFor="let data of imageCards">
+          <app-image-card [data]="data"></app-image-card>
+        </div>
+      </article>
+
+      <article class="align-center">
+        <button class="button">Subscribe Now</button>
+      </article>
+    </section>
+  </main>
+  <app-footer></app-footer>
+</ion-content>

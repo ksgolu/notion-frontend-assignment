@@ -1,0 +1,138 @@
+.footer-container {
+  overflow: hidden;
+}
+
+.footer-container,
+.footer-container * {
+  box-sizing: border-box;
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 80px 64px 80px 64px;
+  background: #ffffff;
+}
+.credits {
+}
+.divider {
+  align-self: stretch;
+  flex-shrink: 0;
+
+  height: 1px;
+  background: #000000;
+  margin-bottom: 24px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  //   align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 24px;
+}
+.link {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.all-rights-reserved {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 21px;
+  color: #000000;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+
+.mobile-view {
+  margin-bottom: var(--gap-large);
+  article {
+    margin-bottom: var(--gap-large);
+  }
+}
+
+.links {
+  h4 {
+    margin-bottom: 32px;
+    font-size: var(--font-medium);
+    font-weight: 900;
+  }
+
+  .link {
+    margin-bottom: 16px;
+    color: #000000;
+  }
+  .link:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subscribe-container {
+  * {
+    margin-bottom: var(--gap-xsamll);
+  }
+  lable {
+    font-size: var(--font-medium);
+    font-weight: 600;
+  }
+
+  input,
+  button {
+    background-color: #fff;
+    border: 1px solid black;
+    color: #000000;
+    width: 100%;
+    height: 48px;
+  }
+
+  p {
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+  }
+  //  {
+  //   width: 100%;
+  // }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles applied when the viewport width is less than or equal to 600 pixels */
+@media screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  .footer-container {
+    padding: 48px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 768 pixels */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium-sized screens */
+}
+
+/* Styles applied when the viewport width is less than or equal to 1024 pixels */
+@media screen and (max-width: 1024px) {
+  /* CSS rules for larger screens */
+}

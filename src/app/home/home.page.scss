@@ -1,0 +1,114 @@
+.header {
+  background-color: var(--notion-hero-background-color);
+  padding: 208px 64px 208px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-large);
+
+  .header_column {
+    max-width: var(--header-container-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--gap-samll);
+    .header_column_content {
+      text-align: center;
+
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-samll);
+      h4 {
+        font-size: 56px;
+        line-height: 120%;
+        font-weight: 900;
+        text-shadow: 2px 2px 0 var(--notion-primary-color);
+      }
+      p {
+        text-wrap: wrap;
+        word-break: break-all;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.container-layout {
+  background-color: var(--notion-section-background-color);
+  padding: 112px 64px;
+  opacity: 0px;
+  // background: no-repeat center/200% auto
+  //   url("../../assets/images/OBJECTS-3.svg")
+  //   var(--notion-section-background-color);
+  // background-size: 180% 500%;
+
+  article {
+    margin-bottom: var(--gap-large);
+  }
+}
+
+.container-layout_card {
+  display: flex;
+  justify-content: center;
+}
+
+.container-layout-image-card {
+  // max-width: 1024px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: var(--gap-large);
+}
+
+/* Styles applied when the viewport width is less than or equal to 600 pixels */
+@media screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  .header {
+    padding: 104px 16px 56px 16px;
+
+    .header_column {
+      .header_column_content {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-samll);
+        h4 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .container-layout {
+    padding: 56px 16px;
+    background: var(--notion-section-background-color);
+  }
+
+  .container-layout-image-card {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap-large);
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 768 pixels */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium-sized screens */
+
+  .container-layout {
+    padding: 56px 16px;
+    background: var(--notion-section-background-color);
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 1024 pixels */
+@media screen and (max-width: 1024px) {
+  /* CSS rules for larger screens */
+}
