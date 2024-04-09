@@ -1,0 +1,48 @@
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  gap: var(--gap-samll);
+  img {
+    height: 56px;
+    width: 56px;
+  }
+  .title {
+    text-align: center;
+    h5 {
+      font-size: var(--font-medium);
+    }
+    h4 {
+      font-size: var(--font-medium-large);
+      font-weight: 700;
+    }
+  }
+}
+.cardImage {
+  //   border: 1px solid black;
+  //   height: 96px;
+  //   width: 96px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Styles applied when the viewport width is less than or equal to 600 pixels */
+@media screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  .imageCard {
+    width: auto;
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 768 pixels */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium-sized screens */
+}
+
+/* Styles applied when the viewport width is less than or equal to 1024 pixels */
+@media screen and (max-width: 1024px) {
+  /* CSS rules for larger screens */
+}
