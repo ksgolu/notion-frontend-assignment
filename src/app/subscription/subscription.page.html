@@ -1,0 +1,141 @@
+<ion-content>
+  <app-menu-bar></app-menu-bar>
+
+  <section class="subscripiton-container">
+    <section class="form-container">
+      <section class="flex flex-wrap">
+        <section class="container container-left">
+          <section>
+            <article class="form-header">
+              <h4>Subscription</h4>
+              <p>to our Montly Surprise Box</p>
+              <div class="h-line color-light-gray"></div>
+            </article>
+            <article>
+              <article class="input-group">
+                <h5>Contact Information</h5>
+                <div>
+                  <app-input
+                    [label]="'name'"
+                    [placeholder]="'e.g Osaman Alshathri'"
+                  />
+                </div>
+                <div>
+                  <app-input
+                    [label]="'name'"
+                    [placeholder]="'e.g Osaman Alshathri'"
+                  />
+                </div>
+              </article>
+
+              <article class="input-group">
+                <h5>Child's Information</h5>
+
+                <div>
+                  <app-input
+                    [label]="'email'"
+                    [placeholder]="'e.g Osaman@gmail.com'"
+                  />
+                </div>
+                <div>
+                  <label for="">Child's Date of Birth</label>
+                  <div class="datePicker flex">
+                    <div>
+                      <app-select
+                        [placeholder]="'Date'"
+                        [options]="dateList"
+                        [name]="'date'"
+                      ></app-select>
+                    </div>
+
+                    <div>
+                      <app-select
+                        [placeholder]="'Month'"
+                        [options]="monthList"
+                        [name]="'month'"
+                      ></app-select>
+                    </div>
+                    <div>
+                      <app-select
+                        [placeholder]="'Year'"
+                        [options]="yearList"
+                        [name]="'year'"
+                      ></app-select>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <app-select
+                    [label]="'Grade'"
+                    [placeholder]="'e.g Grade 2'"
+                    [name]="'grade'"
+                    [options]="gradeList"
+                  ></app-select>
+                </div>
+              </article>
+              <article class="input-group">
+                <h5>As a parent select any 3 topic</h5>
+                <div>
+                  <ion-chip [outline]="true">Arabic</ion-chip>
+                  <ion-chip [outline]="true">Islamic</ion-chip>
+                  <ion-chip [outline]="true">English</ion-chip>
+                  <ion-chip [outline]="true">History</ion-chip>
+                  <ion-chip [outline]="true">Sports</ion-chip>
+                </div>
+              </article>
+            </article>
+          </section>
+
+          <article id="web-button">
+            <button class="button border lg" routerLink="/subscription">
+              Continue to payment
+            </button>
+          </article>
+        </section>
+
+        <section class="container container-right">
+          <article class="form-header">
+            <h4>Summary</h4>
+            <p>to our Montly Surprise Box</p>
+          </article>
+          <article class="mystery-box">
+            <div>
+              <h5>Mystery Box</h5>
+              <p>X 1</p>
+            </div>
+            <div>
+              <h5>SAR <span class="currency">456</span></h5>
+              <p>Monthly</p>
+            </div>
+          </article>
+          <article class="shipping">
+            <div>
+              <p>Subtotal</p>
+              <h6>SAR <span class="currency">456</span></h6>
+            </div>
+            <div>
+              <p>Shipping</p>
+              <p>Free</p>
+            </div>
+            <div>
+              <p>Taxes</p>
+              <h6>SAR <span class="currency">4.0</span></h6>
+            </div>
+            <div class="h-line color-dark-orchid"></div>
+            <div>
+              <h4>Total</h4>
+              <h5>SAR <span class="currency">456</span></h5>
+            </div>
+          </article>
+          <article id="mobile-button">
+            <button class="button border lg" routerLink="/subscription">
+              Continue to payment
+            </button>
+          </article>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <app-footer></app-footer>
+</ion-content>

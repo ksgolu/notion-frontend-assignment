@@ -1,0 +1,120 @@
+.subscripiton-container {
+  // height: 100%;
+  background: top/100% auto
+    url("../../assets/images/subscription-background.svg");
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-container {
+  z-index: 0;
+  position: relative;
+  margin-top: 5%;
+  border-radius: 24px;
+  box-shadow: 0 0 52px 0 #b9a9cd33;
+  // padding: 1rem;
+  margin-bottom: 10rem;
+}
+.container-left {
+  padding: 2rem;
+  // width: 512px;
+  width: 60%;
+  // min-width:
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+}
+.form-header {
+  margin-bottom: 1rem;
+}
+.input-group {
+  margin-bottom: 2rem;
+  h5 {
+    margin-bottom: 8px;
+  }
+}
+.container-right {
+  border-radius: 0 24px 24px 0;
+  padding: 2rem;
+
+  width: 40%;
+  // width: 400px;
+  background-color: #f1edfe;
+  article {
+    margin-bottom: 24px;
+  }
+}
+
+.datePicker {
+  justify-content: space-between;
+  div {
+    width: 30%;
+  }
+}
+
+.mystery-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 16px 40px 16px;
+  gap: 12px;
+  border-radius: 8px;
+  opacity: 0px;
+  // margin-bottom: ;
+}
+
+.shipping {
+  h6 {
+    margin: 0;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .currency {
+    font-weight: 700;
+  }
+}
+#web-button {
+  display: block;
+}
+#mobile-button {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  .subscripiton-container {
+    padding: 1rem;
+  }
+  .form-container {
+    // max-width: 100%;
+    border: 1px solid var(--color-dark-orchid);
+  }
+
+  .container-left {
+    width: 100% !important;
+    border-radius: 24px 24px 0 0;
+  }
+  .container-right {
+    width: 100% !important;
+    border-radius: 0 0 24px 24px;
+  }
+
+  #web-button {
+    display: none;
+  }
+  #mobile-button {
+    display: block;
+  }
+}
+
+/* Styles applied when the viewport width is less than or equal to 768 pixels */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium-sized screens */
+}
+
+/* Styles applied when the viewport width is less than or equal to 1024 pixels */
+@media screen and (max-width: 1024px) {
+  /* CSS rules for larger screens */
+}
